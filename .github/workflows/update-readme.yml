@@ -1,0 +1,35 @@
+name: Update README
+
+on:
+  push:
+    paths:
+      - '**.ipynb'  # ipynbファイルに変更があった時のみ実行
+      - 'generate_readme.py' # スクリプト自体の変更時も実行
+  workflow_dispatch: # 手動実行も許可
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # リポジトリへの書き込み権限を付与
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run generation script
+        run: |
+          python generate_readme.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          # 変更がある場合のみコミット
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update README with latest notebooks" && git push)
