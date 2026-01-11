@@ -6,5 +6,6 @@
 | :--- | :--- | :---: |
 | **Interactive Calculus: Moving the Derivative** | In this interactive lesson, use the sliders to visualize how changing the function parameters and... | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mi3-al/ipynb-tm/blob/main/derivative-pg.ipynb) |
 | **Interactive Calculus: Understanding the Derivative** | In this lesson, we will move beyond memorizing derivative rules. We will visualize the derivative... | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mi3-al/ipynb-tm/blob/main/derivative.ipynb) |
+| **Interactive Calculus: Understanding the Integral** | In this lesson, we visualize the Integral not just as a formula, but as the **Accumulation of Are... | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mi3-al/ipynb-tm/blob/main/sekibun2.ipynb) |
 
-Last updated: Sun Jan 11 08:48:21 UTC 2026
+Last updated: Sun Jan 11 08:51:32 UTC 2026
