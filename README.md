@@ -1,0 +1,4 @@
+- もとのやつ
+  - https://colab.research.google.com/github/Mi3-al/ipynb-tm/blob/main/derivative-pg.ipynb
+- つよつよのやつ
+  - https://colab.research.google.com/github/Mi3-al/ipynb-tm/blob/main/derivative-pg.ipynb
